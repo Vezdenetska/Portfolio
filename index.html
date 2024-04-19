@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/portfolio.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <span class="logo">Portfolio</span>
+        <div class="menu"><i class="fa-solid fa-bars"></i></div>
+        <ul>
+          <li class="nav-item"><a href="#" onclick="return slowScroll('#projects')">My projects</a></li>
+          <li class="nav-item"><a href="#" onclick="return slowScroll('#edu')">Education</a></li>
+          <li class="nav-item"><a href="#" onclick="return slowScroll('#cert')">Certificates</a></li>
+          <li class="nav-item"><a href="#" onclick="return slowScroll('#skills')">Skills</a></li>
+        </ul>
+      </div>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="#" onclick="return slowScroll('#projects')">My projects</a></li>
+          <li class="nav-item"><a href="#" onclick="return slowScroll('#edu')">Education</a></li>
+          <li class="nav-item"><a href="#" onclick="return slowScroll('#cert')">Certificates</a></li>
+          <li class="nav-item"><a href="#" onclick="return slowScroll('#skills')">Skills</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="details">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+            <div class="photo">
+              <img src="images/IMG_5566 (1).jpg" alt="photo">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <h1>Anna Vezdenetska</h1>
+            <br>
+            <span>
+              <h3>DETAILS:</h3>
+              <br>
+              <p><i class="fa-solid fa-phone"></i>  +380668667061</p>
+              <p><i class="fa-solid fa-envelope"></i>  anna.vezdenetska@gmail.com</p>
+              <p class="links mr-5">
+                <a href="https://www.linkedin.com/in/anna-vezdenetska-a78512207/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Vezdenetska"><i class="fa-brands fa-github-alt"></i></a>
+              </p>
+            </span> You can review my CV in PDF format in 
+            <a href="images/ANNA_VEZDENETSKA_CV_ENG.pdf" target="_blank">english</a> or in
+            <a href="images/Anna_Vezdenetska_CV_PL.pdf" target="_blank">polish</a>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div id="projects">
+    <div class="overlay">
+    <h2>My projects</h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <section class="projects">
+          <div class="mt-4">
+            <a href="https://vezdenetska.github.io/front-end/" target="_blank">
+            <h3>Front-end project</h3>
+            <img src="images/MobileApp.png" alt="app">
+            </a>
+          </div>
+          <div class="mt-4">
+            <a href="https://vezdenetska.pythonanywhere.com" target="_blank">
+            <h3>Django project</h3>
+            <img src="images/django2.jpg" alt="django" id="django">
+            </a>
+          </div>
+        </section>
+      </div>
+      <div class="col-md-6">
+        <section class="projects">
+          <div class="mt-4">
+            <a href="https://readymag.website/pandaventure/4499794/" target="_blank">
+            <h3>Static page</h3>
+            <img src="images/panda.jpg" alt="readymag">
+            </a>
+          </div>
+          <div class="mt-4">
+            <a href="pages/images.html">
+              <h3>My images</h3>
+              <img src="images/clock.gif" alt="gifs">
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div id="edu">
+    <div class="overlay">
+      <h2>Education</h2>
+    </div>
+  </div>
+  <div class="edu container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Master degree</h3>
+        <p>WSB MERITO Uniwersity</p>
+        <p><b>Scope of study:</b> Python Programmer</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Engeneer degree</h3>
+        <p>WSB Uniwersity in Poznań</p>
+        <p><b>Scope of study:</b> Multimedia and Computer Graphics</p>
+      </div>
+    </div>
+    <div class="mt-5">
+      <h3>Additional diplomas:</h3>
+      <p>< itproger /> online school of programming</p>
+      <p><b>Profession PHP developer</b></p>
+    </div>
+  </div>
+  <div id="cert">
+    <div class="overlay">
+      <h2>Certificates</h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="mt-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="certificate">
+            <p><b>Creating a cool web page</b></p>
+            <embed src="images/sertificate.pdf" type="application/pdf" width="300" height="500" />
+            <p class="mt-2"><a href="https://itproger.com/view-sertificate/397ae5fd3a2ac88066b27ced2ab74087/web-layout/us" target="_blank">Link to certificate</a></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="certificate">
+            <p><b>Learning python Tkinter and Django</b></p>
+            <embed src="images/sertificatePython.pdf" type="application/pdf" width="300" height="500" />
+            <p class="mt-2"><a href="https://itproger.com/view-sertificate/3b30d50e33982dba247e310cdc0bbd44/python-full/us" target="_blank">Link to certificate</a></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="certificate">
+            <p><b>Course of learning PHP and MySQL</b></p>
+            <embed src="images/sertificate3.pdf" type="application/pdf" width="300" height="500" />
+            <p class="mt-2"><a href="https://itproger.com/view-sertificate/c4f3daf088e08acb7f821ee8b905f1c2/php/us" target="_blank">Link to certificate</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="skills">
+    <div class="overlay">
+      <h2>Skills</h2>
+    </div>
+  </div>
+  <div class="carousel">
+    <div class="flex">
+      <div class="slider flex gap-3">
+        <div class="slide">
+          <img src="images/skills/php.png" alt="PHP" width="40" height="40">
+          <p>PHP</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/11120644_fi_brands_mysql_icon.png" alt="MySQL" width="40" height="40">
+          <p>MySQL</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/1313568_website_web_internet_css_style_icon.png" alt="CSS" width="40" height="40">
+          <p>CSS</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/4373213_js_logo_logos_icon.png" alt="JavaScript" width="40" height="40">
+          <p>JavaScript</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/4375066_logo_sass_icon.png" alt="Sass" width="40" height="40">
+          <p>Sass</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/logo-composer-transparent2.png" alt="Composer" width="40" height="40">
+          <p>Composer</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/4518857_python_icon.png" alt="Python" width="40" height="40">
+          <p>Python</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/4691328_postgresql_icon.png" alt="PostgreSQL" width="40" height="40">
+          <p>PostgreSQL</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/8546787_gulp_icon.png" alt="Gulp" width="40" height="40">
+          <p>Gulp</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/85554_runner_sql_icon.png" alt="SQL" width="40" height="40">
+          <p>SQL</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/9118014_django_fill_icon.png" alt="Django" width="40" height="40">
+          <p>Django</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/uml.png" alt="UML" width="40" height="40">
+          <p>UML</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/docker.png" alt="Docker" width="40" height="40">
+          <p>Docker</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/9117956_bootstrap_fill_icon.png" alt="Bootstrap" width="40" height="40">
+          <p>Bootstrap</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/html.png" alt="HTML" width="40" height="40">
+          <p>HTML</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/2993773_git_social media_icon.png" alt="Git" width="40" height="40">
+          <p>Git</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/wordpress_icon.png" alt="WordPress" width="40" height="40">
+          <p>WordPress</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/laravel_logo_logos_icon.png" alt="Laravel" width="40" height="40">
+          <p>Laravel</p>
+        </div>
+        <div class="slide">
+          <img src="images/skills/php.png" alt="PHP" width="40" height="40">
+          <p>PHP</p>
+        </div>
+      </div>
+    </div>
+    <a class="btn prev-btn" onclick="moveSlides(-1)"> &lt; </a>
+    <a class="btn next-btn" onclick="moveSlides(1)"> &gt; </a>
+  </div>
+  <footer class="overlay">
+    <ul>
+      <li><a href="" onclick="return slowScroll('#projects')">My projects</a></li>
+      <li><a href="" onclick="return slowScroll('#edu')">Education</a></li>
+      <li><a href="" onclick="return slowScroll('#cert')">Certificates</a></li>
+      <li><a href="" onclick="return slowScroll('#skills')">Skills</a></li>
+    </ul>
+  </footer>  
+
+  <script src="https://kit.fontawesome.com/9f85493fa2.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+
+</body>
+</html>
