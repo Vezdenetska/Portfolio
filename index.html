@@ -11,6 +11,7 @@
 </head>
 <body>
   <header>
+    <div id="google_translate_element"></div>
     <div class="container">
       <div class="header-top">
         <span class="logo">Portfolio</span>
@@ -254,6 +255,34 @@
       <li><a href="" onclick="return slowScroll('#skills')">Skills</a></li>
     </ul>
   </footer>  
+
+<script>
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en', // Domyślny język strony
+        includedLanguages: 'en,pl,uk', // Możesz dodać więcej języków
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+
+    // Automatyczne wykrywanie języka użytkownika
+    let userLang = navigator.language || navigator.userLanguage; // np. "pl", "uk"
+    if (userLang.startsWith("pl")) {
+        setTimeout(() => changeLanguage("pl"), 500);
+    } else if (userLang.startsWith("uk")) {
+        setTimeout(() => changeLanguage("uk"), 500);
+    }
+}
+
+function changeLanguage(lang) {
+    let select = document.querySelector("select.goog-te-combo");
+    if (select) {
+        select.value = lang;
+        select.dispatchEvent(new Event("change"));
+    }
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <script src="https://kit.fontawesome.com/9f85493fa2.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
